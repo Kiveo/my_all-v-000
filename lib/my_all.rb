@@ -22,7 +22,7 @@ def my_all(array)
     while i < array.length
       if yield(array[i]) == false
         return false
-      else 
+      else
         return true
       end
       i += 1
