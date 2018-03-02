@@ -18,7 +18,7 @@ require 'pry'
 def my_all(array)
   if block_given?
     i = 0
-    collection = false
+    storage_array = []
     while i < array.length
       yield(array[i])
       i += 1
