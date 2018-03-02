@@ -22,7 +22,7 @@ def my_all?(array)
       storage_array << yield(array[i])
       i += 1
     end
-    
+
     if storage_array.include?(false)
       false
     else
