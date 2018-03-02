@@ -20,8 +20,7 @@ def my_all(array)
     i = 0
     storage_array = []
     while i < array.length
-      x = yield(array[i])
-      storage_array << x
+      storage_array << yield(array[i])
       i += 1
     end
     if storage_array.include?(false)
