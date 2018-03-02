@@ -29,3 +29,4 @@ def my_all(array)
       false
     end
   end
+end
