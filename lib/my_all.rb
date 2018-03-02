@@ -25,7 +25,7 @@ def my_all(array)
     end
     if storage_array.include?(false)
       true
-    else 
+    else
       false
     end
   end
