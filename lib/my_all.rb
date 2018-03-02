@@ -20,15 +20,12 @@ def my_all(array)
     i = 0
     storage_array = []
     while i < array.length
-      if yield(array[i]) == false
-        return false
-      else
-        return true
-      end
+      yield(array[i])
       i += 1
     end
-  else
-    "Did not provide block"
+    if storage_array.include?(false)
+      true
+    else 
+      false
+    end
   end
-
-end
