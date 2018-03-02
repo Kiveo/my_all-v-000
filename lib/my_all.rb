@@ -16,7 +16,6 @@ require 'pry'
 # end
 
 def my_all(array)
-  if block_given?
     i = 0
     storage_array = []
     while i < array.length
@@ -28,5 +27,4 @@ def my_all(array)
     else
       false
     end
-  end
 end
