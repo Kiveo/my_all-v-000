@@ -15,14 +15,14 @@ require 'pry'
 #   end
 # end
 
-def my_all(array)
+def my_all?(array)
     i = 0
     storage_array = []
     while i < array.length
       storage_array << yield(array[i])
       i += 1
     end
-
+    
     if storage_array.include?(false)
       false
     else
