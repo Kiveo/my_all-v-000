@@ -20,8 +20,10 @@ def my_all(array)
     i = 0
     storage_array = []
     while i < array.length
-      if yield(array[i]) == "false"
+      if yield(array[i]) == false
         return false
+      else 
+        return true
       end
       i += 1
     end
