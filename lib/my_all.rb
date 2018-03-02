@@ -17,12 +17,12 @@ require 'pry'
 
 def my_all(array)
   if block_given?
-    i = 0 
+    i = 0
     while i < array.length
       dostuff
     end
   else
     "Did not provide block"
   end
-      
+
 end
