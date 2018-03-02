@@ -18,8 +18,10 @@ require 'pry'
 def my_all(array)
   if block_given?
     i = 0
+    collection = false
     while i < array.length
-      dostuff
+      yield(array[i])
+      i += 1
     end
   else
     "Did not provide block"
